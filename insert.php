@@ -11,9 +11,9 @@ if (isset($_POST['submit'])) {
         $phoneCode = $_POST['phoneCode'];
         $phone = $_POST['phone'];
 
-        $host = "exampledb.c9tdwoglt931.us-west-2.rds.amazonaws.com";
-        $dbUsername = "sampledb1";
-        $dbPassword = "Anil1234567";
+        $host = "test.c9tdwoglt931.us-west-2.rds.amazonaws.com";
+        $dbUsername = "sampledb";
+        $dbPassword = "Anil123456";
         $dbName = "test";
 
         $conn = new mysqli($host, $dbUsername, $dbPassword, $dbName);
