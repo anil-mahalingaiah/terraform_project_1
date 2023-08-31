@@ -19,7 +19,7 @@ if (isset($_POST['submit'])) {
         $host = "test.c9tdwoglt931.us-west-2.rds.amazonaws.com";
         $dbUsername = "logusadmin";
         $dbPassword = "Logus1234";
-        $dbName = "test";
+        $dbName = "anil";
 
         $conn = new mysqli($host, $dbUsername, $dbPassword, $dbName);
 
