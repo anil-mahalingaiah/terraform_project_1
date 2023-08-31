@@ -19,7 +19,7 @@ if (isset($_POST['submit'])) {
         $host = "test.c9tdwoglt931.us-west-2.rds.amazonaws.com";
         $dbUsername = "logusadmin";
         $dbPassword = "Logus1234";
-        $dbName = "anil";
+        $dbName = "kishore";
 
         $conn = new mysqli($host, $dbUsername, $dbPassword, $dbName);
 
@@ -27,8 +27,8 @@ if (isset($_POST['submit'])) {
             die('Could not connect to the database.');
         }
         else {
-            $Select = "SELECT email FROM register WHERE email = ? LIMIT 1";
-            $Insert = "INSERT INTO register(username, password, gender, email, phoneCode, phone) values(?, ?, ?, ?, ?, ?)";
+            $Select = "SELECT email FROM kishore_table WHERE email = ? LIMIT 1";
+            $Insert = "INSERT INTO kishore_table(username, password, gender, email, phoneCode, phone) values(?, ?, ?, ?, ?, ?)";
 
             $stmt = $conn->prepare($Select);
             $stmt->bind_param("s", $email);
