@@ -33,7 +33,7 @@ if (isset($_POST['submit'])) {
             $stmt = $conn->prepare($Select);
             $stmt->bind_param("s", $email);
             $stmt->execute();
-            $stmt->bind_result($resultEmail);
+            $stmt->bind_result($resultemail);
             $stmt->store_result();
             $stmt->fetch();
             $rnum = $stmt->num_rows;
