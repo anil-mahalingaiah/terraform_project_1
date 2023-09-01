@@ -16,7 +16,7 @@ if (isset($_POST['submit'])) {
         $phoneCode = $_POST['phoneCode'];
         $phone = $_POST['phone'];
 
-        $host = "test.c9tdwoglt931.us-west-2.rds.amazonaws.com";
+        $host = "defactdb.c9tdwoglt931.us-west-2.rds.amazonaws.com";
         $dbUsername = "logusadmin";
         $dbPassword = "Logus1234";
         $dbName = "census";
